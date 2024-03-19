@@ -12,4 +12,10 @@ CONTEXT API
 
     - so we then in the file in whcich we are using the components that need the value from the same state
     - we import this createContext const -- which contains the created context 
-    - 
+    - then we also import  a useContext from react 
+    - which we will then use to reAssigb values to the createContext original like this
+        
+        - const newName = useContext(importedOldNameCreateContxt)
+
+    
+

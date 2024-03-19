@@ -6,11 +6,6 @@ import { DUMMY_PRODUCTS } from './dummy-products.js';
 
 import { CartContext } from './store/shopping-cart-context.jsx';
 
-//contains all the components that are going to use this cotext
-// coponents that need to change and read the value of in the original state
-// name it whatever
-// wrap it around the COMPONENT CALLBACK THAT ARE GOING TO HAVE TO USE THIS --
-// IT COMES WITH A INBUILT PROPERTY OF ".property"
 
 function App() {
   const [shoppingCart, setShoppingCart] = useState({
@@ -75,7 +70,7 @@ function App() {
 
   return (
     <>
-    <CartContext.Provider value={{items : []}}>
+    <CartContext.Provider value={shoppingCart}>
       <Header
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}

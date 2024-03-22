@@ -1,11 +1,19 @@
-import { createContext } from "react";
+import { createContext, useReducer } from "react";
 
 export const CartContext = createContext({
     items: [],
     addItemToCart: () => {},
 
-
 })
+
+function shoppingCartReducer(state , action){
+    return state;
+}
+
+function learnReducer(){
+    const [shoppingCartState , shoppingCartDispatch ] = useReducer(shoppingCartDispatch );
+}
+
 
 
 //intial value for this context - avialble to the conponents
@@ -20,4 +28,5 @@ export const CartContext = createContext({
 
     //now we export this created Context 
     // we import it in the component where the callback for the intended  context is used then we
+    
     

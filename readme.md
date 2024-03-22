@@ -69,7 +69,20 @@ g an context is unusbale but the value that matters is the one we  will pass in 
 
 USE-REDUCER
 
-    
+    - it basially gives us a stateVariable and allows us to update it via a fucntion, which automatically recieves the most recent and viable value of the state given
+
+
+// USE REDUCER
+// it returns two things a stateVariable and a dispatch fucntion
+
+// we define a function before the useReducer hook, 
+    // which will be called by react
+    // and will always recieve the most recent and updated value automatically
+        //otherwise in the state we will get it via -- using a anonymous function in case of useState
+    // first argument :we connect these the function with the useReducer hook by passig it as an argument to the useReducer
+    // second argument : the inital value for the state variable
+
+
 
 
 

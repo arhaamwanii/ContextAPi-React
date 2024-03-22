@@ -12,6 +12,8 @@ function App() {
     items: [],
   });
 
+
+  // CART UPDATION
   function handleAddItemToCart(id) {
     setShoppingCart((prevShoppingCart) => {
       const updatedItems = [...prevShoppingCart.items];
@@ -68,9 +70,14 @@ function App() {
     });
   }
 
+  const ctxValue  = {
+    items : shoppingCart.items ,
+    addItemsToCart: handleAddItemToCart
+  }
+
   return (
     <>
-    <CartContext.Provider value={shoppingCart}>
+    <CartContext.Provider value={ctxValue}>
       <Header
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
@@ -89,3 +96,11 @@ function App() {
 }
 
 export default App;
+
+
+//we wrap the required components in this way 
+//we  warp it in including the ".Provider" -- this is inbuilt by the react
+
+
+
+ 

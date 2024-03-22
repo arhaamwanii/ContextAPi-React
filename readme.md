@@ -28,7 +28,35 @@ g an context is unusbale but the value that matters is the one we  will pass in 
 
 - ADVANCE STATE MANAGMEMENT : CONTEXT API (CREATE AND USE)
     - USE REDUCER    
-    solving problims like PROP DRILLIN
+    solving problims like 
+    PROP DRILLING : it is the process of passing states is the process of passing a single state through multiple layers just to use it in some place else 
+    - write a shit ton of boiler plate code just to do that
+    - drill the state through multiple commponenet just to use them 
+
+
+    - sharing data - across layers of components easily context value 
+
+    - you create a context and then wrap that context across multiple layers components of your app
+    - you can connect your state to this context and you have your RPOP DRILLING SOLVED
+
+    //VALUE PROP -- THE DEFAULT VALUE IS ONTY USED IF A COMPONENT WHICH IS NOT WRAPPED IN THE .PROVIDER TRIES TO ACCESS THE VALU
+    //OTHER WISE WE HAVE TO USE THE VALUE PROP TO ASSIGN THE VALUE TO THE
+
+    default value is only used in the case of a non .provider wrapped component tries to use it which in that case would simply use the value provided in the default 
+
+    also will give you autoCompletion while using it
+
+
+    LINKING IT TO STATE - COTNEXT CONNECTED TO STATE
+
+    - well that is pretty simple inpalce of the value prop --- use the stateValriable you want to pass down
+
+    - you can not update the state like this, 
+        - so in order to pass down the state updating function, we just make a new object store that shit in that and then pass that down then use it instead 
+        - naming can be arranged to match 
+        - just like that we use a single object to pass down multiple thigs
+
+
 
     
 

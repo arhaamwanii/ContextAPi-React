@@ -5,6 +5,7 @@ export default function Cart({  onUpdateItemQuantity }) {
  const { items } =  useContext(CartContext)
  //this cartCtx should now have the original CartCotext items
 // i.e the origianl items object array should now be acessable here
+//use context like this one 
 
   const totalPrice = items.reduce(
     (acc, item) => acc + item.price * item.quantity,

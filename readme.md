@@ -55,6 +55,23 @@ g an context is unusbale but the value that matters is the one we  will pass in 
         - so in order to pass down the state updating function, we just make a new object store that shit in that and then pass that down then use it instead 
         - naming can be arranged to match 
         - just like that we use a single object to pass down multiple thigs
+    
+    ANOTHER WAY OF ACESSIGN AND USING THE CONTEXT 
+
+    - Porovider:
+        it is used to assign value to the context
+    - Cosumer
+        then the plave inside of the coponents that are wrapped in the provider we use the contextName.Consumer wrap the code where we want to use this , insde of the cosumer wrapper we need to call an function which automatically via react has acess to all that 
+
+    - what happens when you acess a value the component will get reexecuted will be reexecuted in
+    - rerendered when the context changes
+
+
+USE-REDUCER
+
+    
+
+
 
 
 
